@@ -1,0 +1,83 @@
+[info] Loading global plugins from /Users/ctaylor/.sbt/0.13/plugins
+[info] Set current project to linkedlist (in build file:/Users/ctaylor/local/src/nthalk/scala/fb/)
+[info] Compiling 1 Scala source to /Users/ctaylor/local/src/nthalk/scala/fb/target/scala-2.10/test-classes...
+[info] LinkedListSpec:
+[info] A Linked List
+[info] - should be able to unshift elements into it
+[info] - should be able to shift elements off of it
+[info] - should be able to shift multiple elements off of it
+[info] - should be able to pop elements off of it
+[info] - should be able to pop multiple elements off of it
+[info] - should be iterable
+[info] - should be move the iterator
+[info] - should be convertable to a list
+[info] - should be reversable iterably
+[info] - should be reversable recursivly
+[info] ::Benchmark scala.collection.mutable.LinkedList.reverse::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.213
+[info] 
+[info] ::Benchmark scala.collection.Seq.reverse::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.056
+[info] 
+[info] ::Benchmark scala.collection.List.reverse::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.053
+[info] 
+[info] ::Benchmark Collections.reverse(new java.util.LinkedList(r)).reverse::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.026
+[info] 
+[info] ::Benchmark LinkedList.reverseIterative::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.062
+[info] 
+[info] ::Benchmark LinkedList.reverseRecursive::
+[info] cores: 4
+[info] hostname: carls-mbp
+[info] jvm-name: Java HotSpot(TM) 64-Bit Server VM
+[info] jvm-vendor: Oracle Corporation
+[info] jvm-version: 25.0-b70
+[info] os-arch: x86_64
+[info] os-name: Mac OS X
+[info] Parameters(size -> 10000): 0.053
+[info] 
+[info] ScalaTest
+[info] Run completed in 2 seconds, 261 milliseconds.
+[info] Total number of tests run: 10
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Passed: Total 10, Failed 0, Errors 0, Passed 10
+[success] Total time: 10 s, completed Jun 2, 2014 10:38:52 PM
