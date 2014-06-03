@@ -34,6 +34,16 @@ object LinkedListBenchmark extends PerformanceTest.Quickbenchmark {
       }
     }
   }
+  
+  performance of "scala.collection.List" in {
+    measure method ("reverse") in {
+      using(ranges.map { range =>
+        List(range: _*)
+      }) in { list =>
+        list.reverse.head
+      }
+    }
+  }
 
   performance of "Collections.reverse(new java.util.LinkedList(r))" in {
     measure method ("reverse") in {
