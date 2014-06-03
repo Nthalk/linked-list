@@ -30,6 +30,18 @@ class LinkedListSpec extends FlatSpec with Matchers {
     ll.shift should be(Some(1))
     ll.length should be(0)
   }
+  
+  it should "be able to push elements onto it" in {
+    val ll = LinkedList[Int]()
+    ll.push(1)
+    ll.length should be(1)
+    ll.push(2)
+    ll.length should be(2)
+    ll.pop should be(Some(2))
+    ll.length should be(1)
+    ll.pop should be(Some(1))
+    ll.length should be(0)
+  }
 
   it should "be able to pop elements off of it" in {
     val ll = LinkedList[Int]()
